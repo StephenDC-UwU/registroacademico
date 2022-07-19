@@ -1,0 +1,46 @@
+http://localhost:8080/estudiantes
+
+
+
+###
+
+POST http://localhost:8080/estudiantes HTTP/1.1
+content-type: application/json
+
+{
+    "nombre": "Juan",
+    "apellido": "Valardez",
+    "materia": "Matematica 1",
+    "nota": 10.00
+}
+
+###
+GET http://localhost:8080/estudiantes HTTP/1.1
+
+
+###
+POST http://localhost:8080/estudiantes HTTP/1.1
+content-type: application/json
+
+{
+    "nombre": "Luis",
+    "apellido": "Eugenio",
+    "materia": "Estadistica 1",
+    "nota": 8.00
+}
+
+
+###
+PUT http://localhost:8080/estudiantes/2 HTTP/1.1
+content-type: application/json
+
+{
+    "nombre": "Luis 2.0",
+    "apellido": "Eugenio 2.0",
+    "materia": "Ciencias 1",
+    "nota": 5.00
+}
+
+
+###
+DELETE http://localhost:8080/estudiantes/2
