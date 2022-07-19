@@ -13,13 +13,13 @@ public class Estudiante {
     private String nombre;
     private String apellido;
     private String materia;
-    private Double nota;
+    private int nota;
 
     public Estudiante(){
 
     }
 
-    public Estudiante(Long id, String nombre, String apellido, String materia, Double nota) {
+    public Estudiante(Long id, String nombre, String apellido, String materia, int nota) {
         this.id = id;
         this.nombre = nombre;
         this.apellido = apellido;
@@ -50,10 +50,10 @@ public class Estudiante {
     public void setMateria(String materia) {
         this.materia = materia;
     }
-    public Double getNota() {
+    public int getNota() {
         return nota;
     }
-    public void setNota(Double nota) {
+    public void setNota(int nota) {
         this.nota = nota;
     }
 
